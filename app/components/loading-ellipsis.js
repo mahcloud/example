@@ -18,13 +18,13 @@ const Ellipsis = React.createClass({
   },
 
   updateDots() {
-    let count = (this.state.count >= 3)? 0 : this.state.count + 1;
+    let count = (this.state.count >= 3) ? 0 : this.state.count + 1;
     this.setState({count: count});
   },
 
   render() {
     let dots = ".".repeat(this.state.count);
-    let dotClass = this.props.showColor? "dots" : "";
+    let dotClass = this.props.showColor ? "dots" : "";
 
     return(
       <span className="loading-ellipsis">

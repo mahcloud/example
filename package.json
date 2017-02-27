@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "node_modules/brunch/bin/brunch watch --server",
-    "lint": "eslint test demo app",
+    "lint": "eslint test app",
     "test": "jest"
   },
   "dependencies": {
@@ -30,6 +30,7 @@
     "css-brunch": "^2.6.1",
     "enzyme": "^2.7.1",
     "eslint": "^3.16.0",
+    "eslint-config-google": "^0.7.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-promise": "^3.4.2",
