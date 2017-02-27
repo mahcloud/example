@@ -24,12 +24,13 @@ const Ellipsis = React.createClass({
 
   render() {
     let dots = ".".repeat(this.state.count);
+    let dotClass = this.props.showColor? "dots" : "";
 
     return(
       <span className="loading-ellipsis">
         {this.props.children || "Loading"}
         <span className="dot-holder">
-          <span className="dots">
+          <span className={dotClass}>
             {dots}
           </span>
         </span>
