@@ -26,7 +26,14 @@ const Ellipsis = React.createClass({
     let dots = ".".repeat(this.state.count);
 
     return(
-      <div>{this.props.children || "Loading"}{dots}</div>
+      <span className="loading-ellipsis">
+        {this.props.children || "Loading"}
+        <span className="dot-holder">
+          <span className="dots">
+            {dots}
+          </span>
+        </span>
+      </span>
     );
   }
 });
